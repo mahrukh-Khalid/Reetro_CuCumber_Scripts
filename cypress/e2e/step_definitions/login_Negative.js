@@ -51,3 +51,4 @@ Then('Display an error message',()=>{
 
     cy.get(ToastMsg).should('contain.text', 'Due to 7 unsuccessful login attempts, your account has been temporarily locked. Please reset your password and try to login with the new password.').and('be.visible');
 })
+ 
