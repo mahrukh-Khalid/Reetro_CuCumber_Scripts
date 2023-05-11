@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "open_Cypress": "npx cypress open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "M_K",
   "license": "ISC",
   "devDependencies": {
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
-    "cypress": "^12.11.0",
+    "cypress": "^12.12.0",
     "esbuild": "^0.17.18"
   },
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^17.0.0"
+    "@badeball/cypress-cucumber-preprocessor": "^17.1.0"
   }
 }

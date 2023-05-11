@@ -11,4 +11,7 @@ Scenario:   Check the password Validation
 
 Scenario: Check Login button is clickable 
    Given Login Button is clickable
-         
+   
+Scenario: Forgot password link   
+   Given Forgot passoword link        
+   Then Validate user redirect to Forgot passoword page

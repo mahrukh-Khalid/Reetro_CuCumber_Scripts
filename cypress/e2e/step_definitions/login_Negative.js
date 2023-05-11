@@ -54,9 +54,24 @@ Then('Display an error message',()=>{
  
 
 Given("Login Button is clickable", ()=>{
- 
+    cy.visit(ProductionURL)
     cy.contains("log in").click()
     cy.get(Login_Button).should('be.enabled')
 
+
+})
+
+Given("Forgot password link",()=>{
+    cy.visit(ProductionURL)
+    
+//To check Login page has Forgot password link and its clickable
+    cy.contains("Forgot your password?").click()
+
+})
+
+Then("Validate user redirect to Forgot passoword page", ()=>{
+//To validate User redirect to Forgot password page
+    cy.url().should('include' , "/forgot-password")
+        
 
 })
